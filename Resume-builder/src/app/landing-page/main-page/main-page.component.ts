@@ -11,5 +11,7 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  openForm() {
+    
+  }
 }
