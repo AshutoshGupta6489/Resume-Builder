@@ -1,0 +1,58 @@
+<div class="container-body">
+    <div class="card text-white bg-success  m-5 card-container">
+        <div class="card-body">
+            <form>
+                <div class="form-group ">
+                    <label for="nameInput">Name <span class="text-dark font-weight-bold h5">*</span></label>
+                    <input type="text" class="form-control" id="nameInput" aria-describedby="emailHelp"
+                        placeholder="Enter Name">
+                    <small id="emailHelp" class="form-text text-warning">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="contactInput">Contact Number <span
+                            class="text-dark font-weight-bold h5">*</span></label>
+                    <input type="text" class="form-control" id="contactInput" aria-describedby="emailHelp"
+                        placeholder="Enter Contatct Number">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="inputEmail1">Email address <span class="text-dark font-weight-bold h5">*</span></label>
+                    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+                <div class="form-group mt-3">
+                    <span for="hedInput">Higher Education Details <span
+                            class="text-dark font-weight-bold h5">*</span></span>
+                    <div>Collage Name</div>
+                    <input type="boardInput" class="form-control" id="hedInput" aria-describedby="emailHelp"
+                        placeholder="Enter Collage Name">
+                    <div class="card-conatiner">
+                        <div class="container-fluid">
+                            <div class="row flex-row flex-nowrap info-card mt-3 p-2 card-deck">
+                                <div class="col-3" *ngFor='let fields of incrementField'>
+                                    <div class="card card-block bg-info p-2">
+                                        <div class="form-group">
+                                            <label for="inputEmail1">Semester<span
+                                                    class="text-dark font-weight-bold h5">*</span></label>
+                                            <input type="email" class="form-control" id="inputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Enter Semester">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail1">Marks<span
+                                                    class="text-dark font-weight-bold h5">*</span></label>
+                                            <input type="email" class="form-control" id="inputEmail1"
+                                                aria-describedby="emailHelp" placeholder="Marks in cgp/%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center-ele">
+                            <span class="btn btn-primary" (click)='addEduField()'>Add</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

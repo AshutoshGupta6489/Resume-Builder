@@ -1,0 +1,70 @@
+.container-body {
+    width: 100%;
+    height: calc(100vh - 127px);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 4fr 5fr;
+}
+.container-image {
+    content: url("../../../assets/image/background.jpg");
+}
+.button {
+    height: 50px;
+}
+.text-deco{
+    font-weight: 400;
+}
+.title-wrap{
+    filter: drop-shadow(8px 6px 18px rgba(0, 0, 0, 0.7));
+}
+.title-desc {
+    padding: 20px;
+    padding: 20px;
+    clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 0%, 47% 100%, 100% 100%, 0% 100%, 0 100%);
+    background-color: #683f7d;
+    height: calc(100vh - 127px);
+}
+.card {
+    width: 450px;
+    height: 250px;
+    border-radius: 10px;
+    background: #9b599b;
+    margin-top: 145px;
+    box-shadow: black 1px 8px 30px;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+.section-wrap:hover {
+    animation: section-shadow 0.5s forwards;
+    cursor: pointer;
+}
+.section-wrap {
+    // filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    height: 164px;
+    position: relative;
+    top: 366px;
+}
+@keyframes section-shadow {
+    0% {
+        filter: drop-shadow(3px 0px 0px rgba(50, 50, 0, 0.5));
+    }
+    20% {
+        filter: drop-shadow(3px 5px 2px rgba(50, 50, 0, 0.5));
+    }
+    50% {
+        filter: drop-shadow(3px 10px 5px rgba(50, 50, 0, 0.5));
+    }
+    100% {
+        filter: drop-shadow(3px 20px 7px rgba(50, 50, 0, 0.5));
+    }
+}
+.section-container {
+    height: 150px;
+    background-color: orange;
+    clip-path: polygon(0% 100%, 10% 0%, 100% 0%, 100% 5%, 100% 100%, 100% 100%, 0% 100%, 0 100%);
+    text-align: center;
+    padding: 0px;
+    font-size: 93px;
+    color: white;
+}
