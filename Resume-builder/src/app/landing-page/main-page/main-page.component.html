@@ -1,11 +1,15 @@
 <div class="container-body">
     <div class="title-wrap">
         <div class="title-desc">
-            <span class="display-1 text-light">Make Resume Easy</span>
-            <div class="display-3 text-deco">fill the form select template and download Its that easy</div>
+            <span class="display-4 text-light">Make Resume Easy</span>
+            <div class="display-5 text-deco">fill the form <br>
+                select template and <br>
+                download <br>
+                Its that easy</div>
         </div>
     </div>
-    <div class="section-wrap" (click)="openForm()">
+    <a hidden #navigate routerLink='/forms/details'></a>
+    <div class="section-wrap" (click)="navigate.click()">
         <div class="section-container">
             <span>Get Started</span>
         </div>

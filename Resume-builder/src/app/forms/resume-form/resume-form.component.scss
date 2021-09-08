@@ -1,0 +1,25 @@
+.container-body {
+    width: 100%;
+    height: calc(100vh - 127px);
+    display: grid;
+    justify-content: center;
+}
+.card-container {
+    width: 860px;
+    height: 600px;
+    box-shadow: 0px 2px 20px 8px #312d2d;
+}
+.info-card {
+    overflow: auto;
+}
+.card-deck{
+    width: 770px;
+}
+.center-ele {
+    display: grid;
+    margin: auto;
+}
+.card-conatiner {
+    display: grid;
+    grid-template-columns: 7fr 0fr;
+}
